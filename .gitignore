@@ -1,6 +1,7 @@
 # Next.js specific
 .next/
 out/
+.env
 
 # Next.js specific
 .next/cache

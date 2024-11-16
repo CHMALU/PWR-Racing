@@ -45,7 +45,7 @@ const TeamSection: React.FC<TeamSectionProps> = ({ dict }) => {
             <div className="flex gap-4 mt-8">
               <Button
                 label={dict.buttonLabel}
-                onClick={() => router.push(`/bolid`)}
+                onClick={() => router.push(`/team`)}
               />
             </div>
           </div>
