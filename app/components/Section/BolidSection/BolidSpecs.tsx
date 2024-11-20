@@ -19,7 +19,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
   return (
     <div className="">
       <div
-        className={`${animate} py-2 relative w-[100vw] flex justify-between bg-neutral-700 transition duration-200 ease-out`}
+        className={`${animate} relative w-[100vw] flex justify-between bg-neutral-700 transition duration-200 ease-out`}
       >
         <div className="bg-neutral-800 pl-[calc((100vw-var(--container-width))/3)] z-10 hidden lg:flex justify-between items-center pr-8 ">
           <div className=" flex flex-col">
@@ -51,7 +51,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
             />
           </svg>
         </div>
-        <div className="flex justify-center items-center gap-2 pl-4 lg:pl-0">
+        <div className="flex justify-center items-center py-2 gap-2 pl-4 lg:pl-0">
           <svg
             className="w-14 h-10 md:w-20 md:h-20"
             viewBox="0 0 74 73"
@@ -76,7 +76,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
             </h2>
           </div>
         </div>
-        <div className="flex justify-center items-center gap-2">
+        <div className="flex justify-center items-center py-2 gap-2">
           <svg
             className="w-14 h-14 md:w-24 md:h-20"
             viewBox="0 0 88 88"
@@ -113,7 +113,7 @@ const BolidSpecs: React.FC<BolidSpecsProps> = ({
             </h2>
           </div>
         </div>
-        <div className="flex justify-center items-center pr-4 lg:pr-[calc((100vw-var(--container-width))/3)] gap-2">
+        <div className="flex justify-center items-center py-2 pr-4 lg:pr-[calc((100vw-var(--container-width))/3)] gap-2">
           <svg
             className="w-12 h-12 md:w-20 md:h-20"
             viewBox="0 0 76 83"

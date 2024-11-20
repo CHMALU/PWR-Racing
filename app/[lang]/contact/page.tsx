@@ -26,7 +26,10 @@ interface RoleHistory {
   [key: string]: Role[];
 }
 
-const getMembersData = async (names: string[]): Promise<TeamMember[]> => {
+const getMembersData = async (
+  names: string[],
+  bolidName: string
+): Promise<TeamMember[]> => {
   const teamMembers: TeamMember[] = [];
 
   for (const member of names) {
@@ -36,7 +39,7 @@ const getMembersData = async (names: string[]): Promise<TeamMember[]> => {
     if (memberData.length > 0) {
       const member = memberData[0];
       const currentRole =
-        member.roles.find((role: Role) => role.bolidName === "RT14e")?.role ||
+        member.roles.find((role: Role) => role.bolidName === bolidName)?.role ||
         "No current role";
 
       teamMembers.push({
@@ -60,23 +63,29 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
     params.lang === "pl" || params.lang === "en" ? params.lang : "en";
   const dict = await getDictionary(language);
 
-  const mainMembers = await getMembersData([
-    "paweł wójcik",
-    "bartosz sobczak",
-    "zuzanna kochanowska",
-    "joanna popielewska",
-  ]);
+  const mainMembers = await getMembersData(
+    [
+      "paweł wójcik",
+      "bartosz sobczak",
+      "zuzanna kochanowska",
+      "joanna popielewska",
+    ],
+    "RT15e"
+  );
 
-  const projectSupervisors = await getMembersData([
-    "dr hab. inż. Anna Janicka",
-    "dr hab. inż. Damian Derlukiewicz",
-    "dr inż. Gustaw Sierzputowski",
-  ]);
+  const projectSupervisors = await getMembersData(
+    [
+      "dr hab. inż. Anna Janicka",
+      "dr hab. inż. Damian Derlukiewicz",
+      "dr inż. Gustaw Sierzputowski",
+    ],
+    "RT14e"
+  );
 
-  const siteAdministration = await getMembersData([
-    "dawid chmal",
-    "maria kanczewska",
-  ]);
+  const siteAdministration = await getMembersData(
+    ["dawid chmal", "maria kanczewska"],
+    "RT14e"
+  );
 
   const roleHistory: RoleHistory = {};
   [...mainMembers, ...projectSupervisors, ...siteAdministration].forEach(

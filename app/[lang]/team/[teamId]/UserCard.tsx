@@ -5,6 +5,10 @@ import React from "react";
 import TileHeading from "./TileHeading";
 
 interface UserCardProps {
+  dictionary: {
+    zadzwon: string;
+    napisz: string;
+  };
   opiekun?: boolean;
   member: {
     name: string;
@@ -24,6 +28,7 @@ interface UserCardProps {
 }
 
 const UserCard: React.FC<UserCardProps> = ({
+  dictionary,
   opiekun,
   member,
   teamId,
@@ -65,6 +70,7 @@ const UserCard: React.FC<UserCardProps> = ({
           roleHistory={roleHistory}
           phoneNumber={member.phoneNumber}
           email={member.email}
+          dictionary={dictionary}
         />
       </div>
     </div>

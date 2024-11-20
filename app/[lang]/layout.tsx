@@ -24,7 +24,7 @@ const syncopate = Syncopate({ subsets: ["latin"], weight: ["400", "700"] });
 export const metadata: Metadata = {
   title: "PWR Racing",
   description:
-    "Koło naukowe Politechniki Wrocławskiej zajmujące się budową bolidów",
+    "PWR Racing Team to Strategiczne Koło Naukowe, a zarazem najstarszy i najbardziej utytułowany Zespół wyścigowy Formula Student w Polsce, działający przy Politechnice Wrocławskiej.",
 };
 
 interface RootLayoutProps {
@@ -45,7 +45,7 @@ export default async function RootLayout({
   params,
 }: RootLayoutProps) {
   const language = isLocale(params.lang) ? params.lang : "en";
-  const dict = await getDictionary(language);
+  const dict = await getDictionary("pl");
   return (
     <html lang={params.lang}>
       <body className={font.className}>

@@ -5,9 +5,13 @@ import Link from "next/link";
 
 type DepartmentProps = {
   department: string;
+  objectPositionY?: string;
 };
 
-const Department: React.FC<DepartmentProps> = ({ department }) => {
+const Department: React.FC<DepartmentProps> = ({
+  department,
+  objectPositionY = "50%",
+}) => {
   const imagePath = `/images/departments/${department}.png`;
 
   return (
@@ -18,7 +22,10 @@ const Department: React.FC<DepartmentProps> = ({ department }) => {
             src={imagePath}
             alt={department}
             fill
-            style={{ objectFit: "cover" }}
+            style={{
+              objectFit: "cover",
+              objectPosition: `0 ${objectPositionY}`,
+            }}
           />
         </div>
         <div className="absolute inset-0 bg-black opacity-50 group-hover:opacity-70 transition duration-300 ease-in-out"></div>

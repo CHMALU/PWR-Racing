@@ -65,7 +65,7 @@ const SideBar: React.FC<SideBarProps> = ({ dict }) => {
       <div
         className={`${
           isScrolled ? "" : "-rotate-90 translate-x-1/2"
-        } duration-300`}
+        } duration-300 hidden md:block`}
       >
         <div
           className={`w-56 transition-transform duration-1000 ease-in-out ${

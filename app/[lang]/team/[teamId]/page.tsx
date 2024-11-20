@@ -6,8 +6,10 @@ import Image from "next/image";
 import ClientSlider from "./ClientSlider";
 import UserCard from "./UserCard";
 import { sortRoles } from "./utils";
+import { getDictionary } from "../../dictionaries";
 
 interface Iparams {
+  lang: string;
   teamId?: string;
 }
 
@@ -105,6 +107,10 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
     return aIndex - bIndex;
   });
 
+  const lang = params.lang;
+
+  const dict = await getDictionary(lang, "teamPage");
+
   return (
     <div className="relative bg-neutral-950 pt-32 pb-12">
       <div className="relative overflow-hidden">
@@ -161,6 +167,7 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                         })
                         .map((member, index) => (
                           <UserCard
+                            dictionary={dict}
                             key={index}
                             member={member}
                             teamId={teamId}
@@ -176,7 +183,7 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                           <SecondaryButton
                             darkMode
                             to={`/bolid/${params.teamId}`}
-                            buttonText={`Do bolidu ${params.teamId}`}
+                            buttonText={`${dict.doBolidu} ${params.teamId}`}
                           />
                         </div>
 

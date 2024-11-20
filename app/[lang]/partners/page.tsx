@@ -1,10 +1,11 @@
-"use client";
-
 import Container from "@/app/components/Container";
 import Title from "@/app/components/Title";
 import Button from "@/app/components/Button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import { getDictionary } from "../dictionaries";
+import PartnersButton from "./partnersButtons";
+import { stringify } from "querystring";
 
 // Tablica sponsorów strategicznych
 const strategicSponsors = [
@@ -212,6 +213,7 @@ interface SponsorGridProps {
   height: string;
   gap?: string;
   sponsors: Array<{ name: string; url: string }>;
+  dict?: any;
 }
 
 const SponsorList: React.FC<SponsorGridProps> = ({
@@ -241,12 +243,13 @@ const SponsorList: React.FC<SponsorGridProps> = ({
   </div>
 );
 
-const SponsorGrid: React.FC<SponsorGridProps> = ({
+const SponsorGrid: React.FC<SponsorGridProps> = async ({
   sponsorRank,
   gridCols,
   height,
   gap,
   sponsors,
+  dict,
 }) => {
   // Dynamically split the sponsors array into two halves inside the component
   const halfIndex = Math.ceil(sponsors.length / 2);
@@ -256,7 +259,10 @@ const SponsorGrid: React.FC<SponsorGridProps> = ({
   return (
     <div className="w-full flex flex-col items-center text-center">
       <div className="py-4 my-4 md:my-12 md:mt-14 border-y-2 md:w-fit px-8 border-customRed uppercase">
-        <Title color="black">PARTNERZY {sponsorRank}</Title>
+        <Title color="black">
+          {dict.partners} {""}
+          {dict[sponsorRank]}
+        </Title>
       </div>
       <div className={`flex ${gap} flex-col md:flex-row w-full`}>
         <SponsorList
@@ -276,31 +282,24 @@ const SponsorGrid: React.FC<SponsorGridProps> = ({
   );
 };
 
-const Partners = () => {
-  const router = useRouter();
+const Partners = async ({ params }: { params: { lang: string } }) => {
+  const lang = params.lang;
+
+  const dict = await getDictionary(lang, "partnersPage");
+
   return (
     <div className=" pt-[100px] md:pt-[120px] mb-6 md:mb-12">
       <div className="absolute opacity-5 right-0">
         <h1 className="text-[15rem] font-extrabold text-black uppercase leading-none">
-          PARTNERZY
+          {dict.partners}
         </h1>
       </div>
       <Container>
         <div className="flex flex-col items-center text-center w-full">
           <div className="py-4 my-4 border-b-2 md:w-3/5 border-black">
-            <Title color="black">PARTNERZY</Title>
+            <Title color="black">{dict.partners}</Title>
           </div>
-          <div className="my-8 flex gap-4 md:w-1/3">
-            <Button
-              label="Zostań Partnerem"
-              onClick={() => router.push(`/partners/joinus`)}
-            />
-            <Button
-              outline
-              label="Kontakt"
-              onClick={() => router.push(`/contact`)}
-            />
-          </div>
+          <PartnersButton />
 
           <SponsorGrid
             sponsorRank="strategiczni"
@@ -308,6 +307,7 @@ const Partners = () => {
             height="h-20 md:h-40"
             gap="gap-0"
             gridCols="grid-cols-2"
+            dict={dict}
           />
 
           <SponsorGrid
@@ -316,6 +316,7 @@ const Partners = () => {
             height="h-20 md:h-40"
             gap="md:gap-20"
             gridCols="grid-cols-2"
+            dict={dict}
           />
 
           <SponsorGrid
@@ -324,6 +325,7 @@ const Partners = () => {
             height="h-16 md:h-36"
             gap="md:gap-20"
             gridCols="grid-cols-3"
+            dict={dict}
           />
 
           <SponsorGrid
@@ -332,6 +334,7 @@ const Partners = () => {
             height="h-16 md:h-32"
             gap="md:gap-16"
             gridCols="grid-cols-3 md:grid-cols-4"
+            dict={dict}
           />
 
           <SponsorGrid
@@ -340,6 +343,7 @@ const Partners = () => {
             height="h-16 md:h-32"
             gap="md:gap-16"
             gridCols="grid-cols-3 md:grid-cols-4"
+            dict={dict}
           />
         </div>
       </Container>

@@ -7,6 +7,7 @@ import Button from "@/app/components/Button";
 import SponsorsOfer from "./sponsorsOfer";
 import UserCard from "../../team/[teamId]/UserCard";
 import { getTeamByFullName } from "@/app/actions/getTeamByName";
+import { getDictionary } from "../../dictionaries";
 
 interface Role {
   department: string;
@@ -32,7 +33,7 @@ const getMembersData = async (names: string[]): Promise<TeamMember[]> => {
 
   return teamMembers.map((member) => {
     const currentRole = member.roles.find(
-      (role) => role.bolidName === "RT14e"
+      (role) => role.bolidName === "RT15e"
     )?.role;
     return {
       ...member,
@@ -42,14 +43,22 @@ const getMembersData = async (names: string[]): Promise<TeamMember[]> => {
 };
 
 interface Props {
-  // Define the props for your component here
+  params: {
+    lang: string;
+  };
 }
+const PartnersJoin: React.FC<Props> = async ({ params }) => {
+  // Pobieranie języka z dynamicznych parametrów
+  const { lang } = params;
 
-const PartnersJoin: React.FC<Props> = async () => {
+  // Pobranie słownika
+  const dictionaryCard = await getDictionary(lang, "teamPage");
+
   const mainMembers = await getMembersData([
     "paweł wójcik",
-    "michał wieczorek",
-    "karolina wasiukiewicz",
+    "bartosz sobczak",
+    "zuzanna kochanowska",
+    "joanna popielewska",
   ]);
   return (
     <div className=" pt-[120px] bg-neutral-700 flex flex-col">
@@ -77,9 +86,10 @@ const PartnersJoin: React.FC<Props> = async () => {
               <Text medium wide bold>
                 Skontaktuj się z nami:
               </Text>
-              <div className="grid grid-cols-1 md:grid-cols-3 w-full md:w-3/4 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-4 w-full gap-6">
                 {mainMembers.map((member, index) => (
                   <UserCard
+                    dictionary={dictionaryCard}
                     key={index}
                     member={member}
                     teamId="RT14e"

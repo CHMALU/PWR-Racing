@@ -5,6 +5,7 @@ import Text from "@/app/components/Text";
 import Title from "@/app/components/Title";
 import Image from "next/image";
 import { getDictionary } from "../../dictionaries";
+import { getDictionary2 } from "@/app/actions/getDictionary";
 
 interface Iparams {
   lang: string;
@@ -16,8 +17,8 @@ type Locale = "pl" | "en";
 const BolidPage = async ({ params }: { params: Iparams }) => {
   const { lang, bolidId } = params;
   const currentLocale = lang === "pl" || lang === "en" ? lang : "en";
-
   const dict = await getDictionary(currentLocale);
+
   const bolidIdValue = bolidId ?? "RT13e";
   const bolid = await getBolidByBolidId(bolidIdValue);
 
@@ -36,7 +37,7 @@ const BolidPage = async ({ params }: { params: Iparams }) => {
         <Container>
           <div className="flex flex-col w-full py-8 md:py-16">
             <Title size="big" color="black">
-              OSIĄGNIECIA ZA SEZON {bolid.year}
+              {dict.bolidSection.achievements} {bolid.year}
             </Title>
 
             <div className="flex">

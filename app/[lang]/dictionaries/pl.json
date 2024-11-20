@@ -87,7 +87,8 @@
     "bolidu": "Bolidu",
     "TXTacceleration": "PRZYSPIESZENIE 0-100 KM/H",
     "TXTmass": "MOC SILNIKÓW",
-    "TXTpower": "MASA POJAZDU"
+    "TXTpower": "MASA POJAZDU",
+    "achievements": "OSIĄGNIĘCIA ZA SEZON"
   },
   "heroAbout": {
     "title": "POZNAJ NASZ ZESPÓŁ"
@@ -266,7 +267,7 @@
   "joinUs": {
     "pageTitle": "REKRUTACJA",
     "becomeMember": "ZOSTAŃ CZŁONKIEM",
-    "nextRecruitmentStartsIn": "REKRUTACJA ZAMKNIE SIĘ ZA:",
+    "nextRecruitmentStartsIn": "KOLEJNA REKRUTACJA RUSZY ZA:",
     "days": "DNI",
     "hours": "GODZIN",
     "minutes": "MINUT",
@@ -278,5 +279,18 @@
     "title": "Zaloguj się do panelu administratora",
     "buttonRecruitment": "Zaloguj się",
     "buttonPartner": "Wróć na stronę główną"
+  },
+  "partnersPage": {
+    "partners": "PARTNERZY",
+    "brązowi": "BRĄZOWI",
+    "srebrni": "SREBRNI",
+    "złoci": "ZŁOCI",
+    "platynowi": "PLATYNOWI",
+    "strategiczni": "STRATEGICZNI"
+  },
+  "teamPage": {
+    "doBolidu": "Do bolidu",
+    "zadzwon": "Zadzwoń do mnie!",
+    "napisz": "Napisz do mnie!"
   }
 }

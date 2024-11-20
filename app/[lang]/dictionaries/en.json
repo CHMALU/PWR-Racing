@@ -87,7 +87,8 @@
     "bolidu": "of the Bolid",
     "TXTacceleration": "ACCELERATION 0-100 KM/H",
     "TXTmass": "ENGINE POWER",
-    "TXTpower": "VEHICLE MASS"
+    "TXTpower": "VEHICLE MASS",
+    "achievements": "ACHIEVEMENTS FOR THE SEASON"
   },
   "heroAbout": {
     "title": "MEET OUR TEAM"
@@ -278,5 +279,18 @@
     "seconds": "SECONDS",
     "becomePartner": "Become a Partner",
     "contact": "Contact"
+  },
+  "partnersPage": {
+    "partners": "PARTNERS",
+    "brązowi": "Bronze",
+    "srebrni": "Silver",
+    "złoci": "Gold",
+    "platynowi": "Platinum",
+    "strategiczni": "Strategic"
+  },
+  "teamPage": {
+    "doBolidu": "To the car",
+    "zadzwon": "Call me!",
+    "napisz": "Write to me!"
   }
 }

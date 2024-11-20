@@ -23,6 +23,10 @@ interface Role {
 }
 
 interface ParamsTileHeading {
+  dictionary: {
+    zadzwon: string;
+    napisz: string;
+  };
   opiekun?: boolean;
   member: Member;
   roleHistory: { [key: string]: Role[] };
@@ -58,6 +62,7 @@ const handleMail = (email: string) => {
 };
 
 const TileHeading: React.FC<ParamsTileHeading> = ({
+  dictionary,
   opiekun,
   member,
   roleHistory,
@@ -135,7 +140,7 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
           {/* <ClientSideInteractionButton /> */}
           {phoneNumber && (
             <Button
-              label="Zadzwoń do mnie!"
+              label={dictionary.zadzwon}
               onClick={handlePhone(phoneNumber)}
               outline
               icon={FiPhone}
@@ -144,7 +149,7 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
           )}
           {email && (
             <Button
-              label="Napisz do mnie!"
+              label={dictionary.napisz}
               onClick={handleMail(email)}
               icon={FaEnvelope}
             />
