@@ -261,6 +261,11 @@ const getSVGIcon = (iconName: string) => {
   }
 };
 
+interface Benefit {
+  icon: string; // lub inny typ odpowiadający ikonie
+  title: string;
+}
+
 interface Props {
   params: {
     lang: string;
@@ -280,8 +285,9 @@ const PartnersJoin: React.FC<Props> = async ({ params }) => {
     "zuzanna kochanowska",
     "joanna popielewska",
   ]);
+
   return (
-    <div className=" pt-[120px] bg-neutral-700 flex flex-col">
+    <div className="pt-[120px] bg-neutral-700 flex flex-col">
       <div className="fixed w-full z-0">
         <div className="absolute opacity-5 right-0">
           <h1 className="text-[5rem] font-extrabold text-black uppercase leading-none">
@@ -296,10 +302,10 @@ const PartnersJoin: React.FC<Props> = async ({ params }) => {
           </div>
         </Container>
       </div>
-      <div className="pt-[12rem] md:pt-[16rem] ">
+      <div className="pt-[12rem] md:pt-[16rem]">
         <SponsorsOfer dict={dict.card} />
       </div>
-      <div className=" relative bg-white mt-[-15rem] pt-[20rem] w-full">
+      <div className="relative bg-white mt-[-15rem] pt-[20rem] w-full">
         <Container>
           <div className="flex flex-col w-full">
             <div className="flex flex-col w-full items-center gap-8">
@@ -331,7 +337,7 @@ const PartnersJoin: React.FC<Props> = async ({ params }) => {
                 {dict.sectionTitle2}
               </Text>
               <div className="grid grid-cols-1 md:grid-cols-5 gap-10 md:gap-4 items-start">
-                {dict.benefits.map((benefit, index) => (
+                {dict.benefits.map((benefit: Benefit, index: number) => (
                   <div
                     key={index}
                     className="flex flex-col gap-2 items-center text-center"

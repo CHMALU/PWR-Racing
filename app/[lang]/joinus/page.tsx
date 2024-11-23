@@ -29,7 +29,7 @@ const JoinUs: React.FC<Props> = async ({ params }) => {
             <Title color="black">{dict.joinUs.becomeMember}</Title>
           </div>
           <Timer targetDate="2025-03-15T00:00:00" dict={dict.joinUs} />
-          <ButtonsSection dict={dict.joinUs} />
+          {/* <ButtonsSection dict={dict.joinUs} /> */}
         </div>
       </Container>
       <DepartmentsAbout dict={dict.departmentsAbout} lightMode />
