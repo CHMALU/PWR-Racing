@@ -2,51 +2,53 @@ const { PrismaClient } = require("@prisma/client");
 const prisma = new PrismaClient();
 
 async function main() {
-  const memberToUpdate = { name: "Piotr", surname: "Osiński" };
+  // Funkcja pomocnicza do aktualizacji ról
+  async function updateRole(name, surname, roleData) {
+    const member = await prisma.teamMember.findFirst({
+      where: {
+        AND: [{ name }, { surname }],
+      },
+    });
 
-  const existingMember = await prisma.teamMember.findFirst({
-    where: {
-      name: { equals: memberToUpdate.name, mode: "insensitive" },
-      surname: { equals: memberToUpdate.surname, mode: "insensitive" },
-    },
-  });
-
-  if (existingMember) {
-    // Jeśli członek istnieje, dodaj nową rolę
-    await prisma.teamMember.update({
-      where: { id: existingMember.id },
-      data: {
-        roles: {
-          push: {
-            department: "Composites",
-            role: "Member",
-            bolidName: "RT14e",
+    if (member) {
+      await prisma.teamMember.update({
+        where: { id: member.id }, // Użycie unikalnego `id`
+        data: {
+          roles: {
+            push: roleData, // Dodanie nowej roli do tablicy `roles`
           },
         },
-      },
-    });
-    console.log(
-      `Updated roles for ${memberToUpdate.name} ${memberToUpdate.surname}`
-    );
-  } else {
-    // Jeśli członek nie istnieje, dodaj nowego członka zespołu z odpowiednimi danymi
-    await prisma.teamMember.create({
-      data: {
-        name: memberToUpdate.name,
-        surname: memberToUpdate.surname,
-        roles: [
-          {
-            department: "Composites",
-            role: "Member",
-            bolidName: "RT14e",
-          },
-        ],
-      },
-    });
-    console.log(
-      `Created new team member ${memberToUpdate.name} ${memberToUpdate.surname}`
-    );
+      });
+      console.log(`Zaktualizowano role dla: ${name} ${surname}`);
+    } else {
+      console.log(`Nie znaleziono członka: ${name} ${surname}`);
+    }
   }
+
+  // Dodanie ról dla członków
+  await updateRole("paweł", "wójcik", {
+    department: "management",
+    role: "team leader",
+    bolidName: "RT15e",
+  });
+
+  await updateRole("bartosz", "sobczak", {
+    department: "management",
+    role: "technical leader",
+    bolidName: "RT15e",
+  });
+
+  await updateRole("zuzanna", "kochanowska", {
+    department: "marketing",
+    role: "marketing leader",
+    bolidName: "RT15e",
+  });
+
+  await updateRole("joanna", "popielewska", {
+    department: "business",
+    role: "business leader",
+    bolidName: "RT15e",
+  });
 }
 
 main()
