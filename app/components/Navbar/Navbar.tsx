@@ -61,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ lang, dict }) => {
             </div>
             <NavigationMenu dict={dict} />
           </div>
-          <UserMenu lang={lang} />
+          <UserMenu dict={dict} lang={lang} />
         </div>
       </div>
     </header>

@@ -58,7 +58,7 @@ const SideBar: React.FC<SideBarProps> = ({ dict }) => {
           <Button
             icon={FaCamera}
             label={dict.media}
-            onClick={() => router.push(`/partners/joinus`)}
+            redirectPath="/partners/joinus"
           />
         </div>
       </div>
@@ -78,7 +78,7 @@ const SideBar: React.FC<SideBarProps> = ({ dict }) => {
             icon={MdPerson}
             outline
             label={dict.recruitment}
-            onClick={() => router.push("/joinus")}
+            redirectPath="/joinus"
           />
         </div>
       </div>

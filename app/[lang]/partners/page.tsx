@@ -299,7 +299,12 @@ const Partners = async ({ params }: { params: { lang: string } }) => {
           <div className="py-4 my-4 border-b-2 md:w-3/5 border-black">
             <Title color="black">{dict.partners}</Title>
           </div>
-          <PartnersButton />
+          <PartnersButton
+            dict={{
+              becomePartner: dict.zostanPartnerem,
+              contact: dict.kontakt,
+            }}
+          />
 
           <SponsorGrid
             sponsorRank="strategiczni"

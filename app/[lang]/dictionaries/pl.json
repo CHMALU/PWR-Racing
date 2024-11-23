@@ -111,6 +111,7 @@
   "departmentsAbout": {
     "title": "NASZE DZIAŁY",
     "interestedIn": "JAKI DZIAŁ CIĘ INTERESUJE?",
+    "sectionSubtitle": "W naszym dziale zajmiesz się:",
     "mechanical": {
       "description": "Dział zajmuje się projektowaniem i budową układu zawieszenia. Odpowiada również za elementy autonomicznego układu kierowniczego, hamulcowego, części mocowania czy struktury metalowe w monocoque.",
       "responsibilities": [
@@ -267,6 +268,7 @@
   "joinUs": {
     "pageTitle": "REKRUTACJA",
     "becomeMember": "ZOSTAŃ CZŁONKIEM",
+    "thanksForInterest": "Rekrutacja zakończona, dziękujemy za zainteresowanie! 🚀",
     "nextRecruitmentStartsIn": "KOLEJNA REKRUTACJA RUSZY ZA:",
     "days": "DNI",
     "hours": "GODZIN",
@@ -281,6 +283,8 @@
     "buttonPartner": "Wróć na stronę główną"
   },
   "partnersPage": {
+    "zostanPartnerem": "Zostań Partnerem",
+    "kontakt": "Kontakt",
     "partners": "PARTNERZY",
     "brązowi": "BRĄZOWI",
     "srebrni": "SREBRNI",
@@ -292,5 +296,58 @@
     "doBolidu": "Do bolidu",
     "zadzwon": "Zadzwoń do mnie!",
     "napisz": "Napisz do mnie!"
+  },
+  "partnerJoinUsPage": {
+    "pageTitle": "ZOSATAŃ PARTNEREM",
+    "sectionTitle2": "Współpraca z nami to:",
+    "benefits": [
+      {
+        "title": "Oryginalny sposób na międzynarodową promocję",
+        "icon": "internationalPromotion"
+      },
+      {
+        "title": "Skuteczny employer branding",
+        "icon": "employerBranding"
+      },
+      {
+        "title": "Regularna obecność w mediach społecznościowych",
+        "icon": "socialMediaPresence"
+      },
+      {
+        "title": "Zwiększona widoczność firmy",
+        "icon": "companyVisibility"
+      },
+      {
+        "title": "Bycie częścią innowacyjnego projektu",
+        "icon": "innovativeProject"
+      }
+    ],
+    "card": {
+      "sectionTitle": "Pobierz naszą Ofertę Współpracy",
+      "buttonLabel": "Pobierz naszą Ofertę Współpracy",
+      "coZnajdziesz": "Co w niej znajdziesz?",
+      "details": [
+        {
+          "icon": "aboutUs",
+          "title": "Kim jesteśmy"
+        },
+        {
+          "icon": "achievements",
+          "title": "Nasze sukcesy"
+        },
+        {
+          "icon": "cooperation",
+          "title": "Propozycja współpracy z Zespołem"
+        },
+        {
+          "icon": "pakiet",
+          "title": "Pakiety działań wizerunkowych "
+        },
+        {
+          "icon": "contact",
+          "title": "Kontakt"
+        }
+      ]
+    }
   }
 }

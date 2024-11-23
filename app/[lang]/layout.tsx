@@ -45,7 +45,7 @@ export default async function RootLayout({
   params,
 }: RootLayoutProps) {
   const language = isLocale(params.lang) ? params.lang : "en";
-  const dict = await getDictionary("pl");
+  const dict = await getDictionary(language);
   return (
     <html lang={params.lang}>
       <body className={font.className}>

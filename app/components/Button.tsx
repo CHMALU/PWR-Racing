@@ -1,8 +1,8 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 import { IconType } from "react-icons";
 import { useState } from "react";
+import { useHandleLocaleRedirect } from "./HandleLocaleRedirect";
 
 interface ButtonProps {
   label: string;
@@ -13,6 +13,7 @@ interface ButtonProps {
   black?: boolean;
   icon?: IconType;
   hoverText?: string; // Opcjonalny prop dla tekstu wyświetlanego podczas hovera
+  redirectPath?: string; // Ścieżka do przekierowania
 }
 
 const formatPhoneNumber = (phoneNumber: string) => {
@@ -32,12 +33,23 @@ const Button: React.FC<ButtonProps> = ({
   black,
   icon: Icon,
   hoverText,
+  redirectPath,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const handleLocaleRedirect = useHandleLocaleRedirect(); // Wywołanie customowego hooka
+
+  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
+    if (redirectPath) {
+      e.preventDefault(); // Zapobiega domyślnemu zachowaniu
+      handleLocaleRedirect(redirectPath); // Wywołanie funkcji przekierowania
+    } else if (onClick) {
+      onClick(e);
+    }
+  };
 
   return (
     <button
-      onClick={onClick}
+      onClick={handleClick}
       disabled={disabled}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

@@ -23,6 +23,7 @@ const ResponsibilityItem: React.FC<ResponsibilityItemProps> = ({
 interface DepartmentElementProps {
   department: string;
   responsibilities: { text: string; icon: string }[];
+  departmentSubtitle: string;
   text: string;
   index: number;
   lightMode?: boolean;
@@ -31,6 +32,7 @@ interface DepartmentElementProps {
 const DepartmentElement: React.FC<DepartmentElementProps> = ({
   department,
   responsibilities,
+  departmentSubtitle,
   text,
   index,
   lightMode,
@@ -62,7 +64,7 @@ const DepartmentElement: React.FC<DepartmentElementProps> = ({
             <Text color={textColor}>{text}</Text>
             <div className="flex flex-col gap-4 mt-4 md:mt-10">
               <Text color={textColor} bold>
-                W naszym dziale zajmiesz się:
+                {departmentSubtitle}
               </Text>
               <div className="flex flex-col gap-2">
                 {responsibilities.map((responsibility, idx) => (

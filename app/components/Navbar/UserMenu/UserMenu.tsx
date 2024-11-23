@@ -19,9 +19,18 @@ import LangButton from "./LangButton";
 
 interface UserMenuProps {
   lang: string;
+  dict: {
+    home: string;
+    bolid: string;
+    team: string;
+    about: string;
+    partners: string;
+    news: string;
+    contact: string;
+  };
 }
 
-const UserMenu: React.FC<UserMenuProps> = ({ lang }) => {
+const UserMenu: React.FC<UserMenuProps> = ({ lang, dict }) => {
   const router = useRouter();
   const pathname = usePathname();
   const registerModal = useRegisterModal();
@@ -123,27 +132,27 @@ const UserMenu: React.FC<UserMenuProps> = ({ lang }) => {
             <MenuItem onClick={() => handleMenuItemClick(`/`)} label="Home" />
             <MenuItem
               onClick={() => handleMenuItemClick(`/bolid/RT14e`)}
-              label="Bolid"
+              label={dict.about}
             />
             <MenuItem
               onClick={() => handleMenuItemClick(`/team/RT14e`)}
-              label="Zespoł"
+              label={dict.team}
             />
             <MenuItem
               onClick={() => handleMenuItemClick(`/about`)}
-              label="O nas"
+              label={dict.bolid}
             />
             <MenuItem
               onClick={() => handleMenuItemClick(`/partners`)}
-              label="Partnerzy"
+              label={dict.partners}
             />
             <MenuItem
               onClick={() => handleMenuItemClick(`/news`)}
-              label="Aktualności"
+              label={dict.news}
             />
             <MenuItem
               onClick={() => handleMenuItemClick(`/contact`)}
-              label="Kontakt"
+              label={dict.contact}
             />
             <div className="w-full h-[1px] bg-black"></div>
             <div className="social-responsive flex items-center gap-4 my-2 mx-3 ">

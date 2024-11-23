@@ -62,6 +62,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
   const language =
     params.lang === "pl" || params.lang === "en" ? params.lang : "en";
   const dict = await getDictionary(language);
+  const dictionaryCard = await getDictionary(language, "teamPage");
 
   const mainMembers = await getMembersData(
     [
@@ -122,6 +123,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
             {mainMembers.map((member, index) => (
               <div key={index} className="flex flex-col gap-6 ">
                 <UserCard
+                  dictionary={dictionaryCard}
                   member={member}
                   teamId="RT14e"
                   roleHistory={roleHistory}
@@ -152,6 +154,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
             <div className="grid grid-cols-1 md:grid-cols-3 w-full md:w-3/4 gap-6">
               {projectSupervisors.map((member, index) => (
                 <UserCard
+                  dictionary={dictionaryCard}
                   key={index}
                   opiekun={true}
                   member={member}
@@ -166,6 +169,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
             <div className="grid grid-cols-1 md:grid-cols-2 w-full md:w-1/2 gap-6">
               {siteAdministration.map((member, index) => (
                 <UserCard
+                  dictionary={dictionaryCard}
                   key={index}
                   member={member}
                   teamId="RT14e"

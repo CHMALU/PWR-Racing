@@ -3,16 +3,17 @@
 import Button from "@/app/components/Button";
 import { useRouter } from "next/navigation";
 
-const PartnersButton = () => {
+interface PartnersButtonProps {
+  dict: { becomePartner: string; contact: string };
+}
+
+const PartnersButton: React.FC<PartnersButtonProps> = ({ dict }) => {
   const router = useRouter();
 
   return (
     <div className="my-8 flex gap-4 md:w-1/3">
-      <Button
-        label="Zostań Partnerem"
-        onClick={() => router.push("/partners/joinus")}
-      />
-      <Button outline label="Kontakt" onClick={() => router.push("/contact")} />
+      <Button label={dict.becomePartner} redirectPath="/partners/joinus" />
+      <Button outline label={dict.contact} redirectPath="/contact" />
     </div>
   );
 };

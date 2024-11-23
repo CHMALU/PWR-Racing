@@ -111,6 +111,7 @@
   "departmentsAbout": {
     "title": "OUR DEPARTMENTS",
     "interestedIn": "WHICH DEPARTMENT ARE YOU INTERESTED IN?",
+    "sectionSubtitle": "In our department, you will take care of:",
     "mechanical": {
       "description": "The department is responsible for designing and building the suspension system. It is also responsible for the elements of the autonomous steering and braking systems, mounting parts, and metal structures in the monocoque.",
       "responsibilities": [
@@ -273,6 +274,7 @@
     "pageTitle": "RECRUITMENT",
     "becomeMember": "BECOME A MEMBER",
     "nextRecruitmentStartsIn": "THE NEXT RECRUITMENT STARTS IN:",
+    "thanksForInterest": "Recruitment has ended, thank you for your interest! 🚀",
     "days": "DAYS",
     "hours": "HOURS",
     "minutes": "MINUTES",
@@ -281,6 +283,8 @@
     "contact": "Contact"
   },
   "partnersPage": {
+    "zostanPartnerem": "Become a Partner",
+    "kontakt": "Contact",
     "partners": "PARTNERS",
     "brązowi": "Bronze",
     "srebrni": "Silver",
@@ -292,5 +296,59 @@
     "doBolidu": "To the car",
     "zadzwon": "Call me!",
     "napisz": "Write to me!"
+  },
+  "partnerJoinUsPage": {
+    "pageTitle": "BECOME A PARTNER",
+    "sectionTitle1": "Contact us:",
+    "sectionTitle2": "Cooperation with us means:",
+    "benefits": [
+      {
+        "title": "An original way of international promotion",
+        "icon": "internationalPromotion"
+      },
+      {
+        "title": "Effective employer branding",
+        "icon": "employerBranding"
+      },
+      {
+        "title": "Regular presence in social media",
+        "icon": "socialMediaPresence"
+      },
+      {
+        "title": "Increased company visibility",
+        "icon": "companyVisibility"
+      },
+      {
+        "title": "Being part of an innovative project",
+        "icon": "innovativeProject"
+      }
+    ],
+    "card": {
+      "sectionTitle": "Download Our Cooperation Offer",
+      "buttonLabel": "Download Our Cooperation Offer",
+      "coZnajdziesz": "What will you find inside?",
+      "details": [
+        {
+          "icon": "aboutUs",
+          "title": "Who we are"
+        },
+        {
+          "icon": "achievements",
+          "title": "Our achievements"
+        },
+        {
+          "icon": "cooperation",
+          "title": "Cooperation proposal with the team"
+        },
+        {
+          "icon": "pakiet",
+          "title": "Branding activity packages"
+        },
+        {
+          "icon": "contact",
+          "title": "Contact"
+        }
+      ]
+    }
   }
 }

@@ -19,6 +19,7 @@ type DepartmentsAboutProps = {
   dict: {
     title: string;
     interestedIn: string;
+    sectionSubtitle: string;
     mechanical: {
       description: string;
       responsibilities: { text: string; icon: string }[];
@@ -183,6 +184,7 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
               key={department.name}
               department={department.name}
               responsibilities={department.responsibilities}
+              departmentSubtitle={dict.sectionSubtitle}
               text={department.description}
               index={index}
               lightMode={lightMode}

@@ -3,7 +3,7 @@
 import Text from "@/app/components/Text";
 import toast from "react-hot-toast";
 import { FaEnvelope } from "react-icons/fa";
-import { useHandleNavigation } from "@/app/components/NavigationHandler";
+import { useHandleLocaleRedirect } from "@/app/components/HandleLocaleRedirect"; // Import customowego hooka
 
 interface EmailActionProps {
   email: string;
@@ -42,14 +42,18 @@ const EmailAction: React.FC<EmailActionProps> = ({ email }) => {
   );
 };
 
-interface AdmingProps {
+interface AdminProps {
   text: string;
 }
-const Admin: React.FC<AdmingProps> = ({ text }) => {
-  const handleNavigation = useHandleNavigation("/admin");
+const Admin: React.FC<AdminProps> = ({ text }) => {
+  const handleLocaleRedirect = useHandleLocaleRedirect(); // Użycie customowego hooka
+
+  const handleNavigation = () => {
+    handleLocaleRedirect("/admin");
+  };
 
   return (
-    <div onClick={handleNavigation} className=" cursor-pointer">
+    <div onClick={handleNavigation} className="cursor-pointer">
       <Text bold medium>
         {text}
       </Text>
