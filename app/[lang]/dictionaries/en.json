@@ -86,8 +86,8 @@
     "specyfikacja": "Specification",
     "bolidu": "of the Bolid",
     "TXTacceleration": "ACCELERATION 0-100 KM/H",
-    "TXTmass": "ENGINE POWER",
-    "TXTpower": "VEHICLE MASS",
+    "TXTpower": "ENGINE POWER",
+    "TXTmass": "VEHICLE MASS",
     "achievements": "ACHIEVEMENTS FOR THE SEASON"
   },
   "heroAbout": {

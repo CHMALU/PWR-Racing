@@ -100,12 +100,12 @@ const LoginModal = () => {
       />
       <div className="text-neutral-500 text-center mt-4 font-light">
         <div className="justify-center flex flex-row items-center gap-2">
-          <div>First time using Airbnb?</div>
+          <div>Nie pamiętasz hasła?</div>
           <div
             onClick={toggle}
             className="text-neutral-800 cursor-pointer hover:underline"
           >
-            Create an account
+            Skontaktuj się z administratorem
           </div>
         </div>
       </div>

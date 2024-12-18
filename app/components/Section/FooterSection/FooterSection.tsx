@@ -54,10 +54,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ dict }) => {
   };
 
   const handleMapClick = () => {
-    window.open(
-      "https://www.google.com/maps/place/Sopocka+16,+50-344+Wroc%C5%82aw/data=!4m2!3m1!1s0x470fe82d5f41f4fd:0xa5be6508736bb57b?sa=X&ved=1t:242&ictx=1",
-      "_blank"
-    );
+    window.open("https://maps.app.goo.gl/A3E2pEjZndstzrDT8", "_blank");
   };
 
   const router = useRouter();
