@@ -3,6 +3,9 @@
 
 import { ReactNode } from "react";
 import { AuthProvider } from "@/app/context/Auth/AuthContext";
+import LoginModal from "@/app/components/modals/LoginModal";
+import RegisterModal from "@/app/components/modals/RegisterModal";
+import RentModal from "@/app/components/modals/RentModal";
 
 interface AdminLayoutProps {
   children: ReactNode;
@@ -10,9 +13,14 @@ interface AdminLayoutProps {
 
 const AdminLayout: React.FC<AdminLayoutProps> = ({ children }) => {
   return (
-    <AuthProvider>
-      <div className="admin-layout">{children}</div>
-    </AuthProvider>
+    <div className="">
+      <LoginModal />
+      <RegisterModal />
+      <RentModal />
+      <AuthProvider>
+        <div className="admin-layout">{children}</div>
+      </AuthProvider>
+    </div>
   );
 };
 

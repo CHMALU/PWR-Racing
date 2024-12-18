@@ -154,12 +154,12 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
                     >
                       {membersByDepartment[department]
                         .sort((a, b) => {
-                          const isLeaderA = a.currentRole
-                            .toLowerCase()
-                            .includes("leader");
-                          const isLeaderB = b.currentRole
-                            .toLowerCase()
-                            .includes("leader");
+                          const isLeaderA =
+                            a.currentRole.toLowerCase().includes("leader") ||
+                            a.currentRole.toLowerCase().includes("lider");
+                          const isLeaderB =
+                            b.currentRole.toLowerCase().includes("leader") ||
+                            b.currentRole.toLowerCase().includes("lider");
                           if (isLeaderA && !isLeaderB) return -1;
                           if (!isLeaderA && isLeaderB) return 1;
                           if (isLeaderA && isLeaderB) return 0;

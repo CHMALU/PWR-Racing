@@ -259,10 +259,7 @@ const SponsorGrid: React.FC<SponsorGridProps> = async ({
   return (
     <div className="w-full flex flex-col items-center text-center">
       <div className="py-4 my-4 md:my-12 md:mt-14 border-y-2 md:w-fit px-8 border-customRed uppercase">
-        <Title color="black">
-          {dict.partners} {""}
-          {dict[sponsorRank]}
-        </Title>
+        <Title color="black">{dict[sponsorRank]}</Title>
       </div>
       <div className={`flex ${gap} flex-col md:flex-row w-full`}>
         <SponsorList

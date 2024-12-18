@@ -286,11 +286,11 @@
     "zostanPartnerem": "Zostań Partnerem",
     "kontakt": "Kontakt",
     "partners": "PARTNERZY",
-    "brązowi": "BRĄZOWI",
-    "srebrni": "SREBRNI",
-    "złoci": "ZŁOCI",
-    "platynowi": "PLATYNOWI",
-    "strategiczni": "STRATEGICZNI"
+    "brązowi": "PARTNERZY BRĄZOWI",
+    "srebrni": "PARTNERZY SREBRNI",
+    "złoci": "PARTNERZY ZŁOCI",
+    "platynowi": "PARTNERZY PLATYNOWI",
+    "strategiczni": "PARTNERZY STRATEGICZNI"
   },
   "teamPage": {
     "doBolidu": "Do bolidu",

@@ -155,15 +155,10 @@
       ]
     },
     "marketing": {
-      "description": "The department is responsible for the image, promotion of the Team, as well as logistics and event organization. It is also responsible for preparing static competitions for Formula Student events, such as the business presentation.",
+      "description": "The department responsible for the team's image and promoting its activities on social media. Additionally, it handles logistics and event organization.",
       "responsibilities": [
-        { "text": "creating promotional materials", "icon": "plik.svg" },
-        { "text": "preparing business presentations", "icon": "kolo.svg" },
-        {
-          "text": "coordinating orders, data analysis, optimizing Team's work",
-          "icon": "klucz.svg"
-        },
-        { "text": "organizing events", "icon": "box.svg" }
+        { "text": "Creating promotional materials", "icon": "plik.svg" },
+        { "text": "Organizing events", "icon": "box.svg" }
       ]
     },
     "software": {
@@ -286,11 +281,11 @@
     "zostanPartnerem": "Become a Partner",
     "kontakt": "Contact",
     "partners": "PARTNERS",
-    "brązowi": "Bronze",
-    "srebrni": "Silver",
-    "złoci": "Gold",
-    "platynowi": "Platinum",
-    "strategiczni": "Strategic"
+    "brązowi": "Bronze PARTNERS",
+    "srebrni": "Silver PARTNERS",
+    "złoci": "Gold PARTNERS",
+    "platynowi": "Platinum PARTNERS",
+    "strategiczni": "Strategic PARTNERS"
   },
   "teamPage": {
     "doBolidu": "To the car",

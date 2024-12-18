@@ -110,9 +110,11 @@ const DepartmentsAbout: React.FC<DepartmentsAboutProps> = ({
         </Container>
       ) : (
         <div className="mt-12 mb-6 text-center flex flex-col gap-6 ">
-          <Title wrap color="black">
-            {dict.interestedIn}
-          </Title>
+          <Container>
+            <Title wrap color="black">
+              {dict.interestedIn}
+            </Title>
+          </Container>
           <div className="w-full">
             <Container>
               <div className="flex gap-4 md:w-3/4 flex-wrap justify-center items-center">

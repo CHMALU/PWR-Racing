@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 import { useRouter } from "next/navigation";
-import LoginModal from "@/app/components/modals/LoginModal";
+
 import JoinusSection from "@/app/components/Section/JoinusSection/JoinusSection";
 import { useAuth } from "@/app/context/Auth/AuthContext";
 
@@ -27,7 +27,6 @@ const AdminPageContent: React.FC<AdminPageClientProps> = ({ dict }) => {
   return (
     <>
       <JoinusSection dict={dict} sizeBig />
-      <LoginModal />
     </>
   );
 };

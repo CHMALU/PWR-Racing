@@ -6,6 +6,7 @@ import Button from "../../Button";
 import Title from "../../Title";
 import { useRouter } from "next/navigation";
 import useLoginModal from "@/app/hooks/useLoginModal";
+import useRentModal from "@/app/hooks/useRentModal";
 
 interface JoinusSectionProps {
   dict: {
@@ -22,6 +23,7 @@ const JoinusSection: React.FC<JoinusSectionProps> = ({
 }) => {
   const router = useRouter();
   const loginModal = useLoginModal();
+  const newModal = useRentModal();
 
   return (
     <div
@@ -117,7 +119,7 @@ const JoinusSection: React.FC<JoinusSectionProps> = ({
                 label={dict.buttonPartner}
                 onClick={() => {
                   if (sizeBig) {
-                    router.push(`/`);
+                    newModal.onOpen();
                   } else {
                     router.push(`/partners/joinus`);
                   }
