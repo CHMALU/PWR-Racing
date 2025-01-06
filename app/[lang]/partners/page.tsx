@@ -205,6 +205,10 @@ const bronzeSponsors = [
     name: "unisystem-slogan-logo_unisystem-slogan-logo.svg",
     url: "https://unisystem.com/",
   },
+  {
+    name: "AutoSock.png",
+    url: "https://autosock.com.pl/",
+  },
 ];
 
 interface SponsorGridProps {
