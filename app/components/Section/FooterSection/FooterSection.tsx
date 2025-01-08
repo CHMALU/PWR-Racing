@@ -181,7 +181,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ dict }) => {
               </Text>
               <ul className="mt-1 md:mt-2">
                 <FooterLink onClick={handleMapClick}>{dict.address}</FooterLink>
-                <FooterLink onClick={handleMapClick}>50-349 Wrocław</FooterLink>
+                <FooterLink onClick={handleMapClick}>50-344 Wrocław</FooterLink>
                 <FooterLink onClick={handlePhoneClick}>{dict.phone}</FooterLink>
                 <FooterLink onClick={handleEmailClick}>{dict.email}</FooterLink>
               </ul>
