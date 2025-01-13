@@ -26,6 +26,7 @@ const platinumSponsors = [
   { name: "content.jpg", url: "https://www.lapp.com/pl/pl/PLN/" },
   { name: "ellagro.png", url: "http://www.ellagro.com/" },
   { name: "endego.jpg", url: "https://endego.com/pl/" },
+  { name: "altair.png", url: "https://endego.com/pl/" },
   {
     name: "fanuc.jpg",
     url: "https://www.fanuc.eu/pl/pl?gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds0vZ-AdUK6tbuY9tFhBFlKjg323nGPseM-z6mF96YXZ8RJVH6Hp9TEaAnANEALw_wcB",
