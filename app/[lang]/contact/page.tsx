@@ -65,12 +65,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
   const dictionaryCard = await getDictionary(language, "teamPage");
 
   const mainMembers = await getMembersData(
-    [
-      "paweł wójcik",
-      "bartosz sobczak",
-      "zuzanna kochanowska",
-      "joanna popielewska",
-    ],
+    ["paweł wójcik", "bartosz sobczak", "alicja jeżak", "joanna popielewska"],
     "RT15e"
   );
 

@@ -6,9 +6,9 @@ export async function getBolidByBolidId(bolidId: string) {
     where: {
       name: bolidId,
     },
-    select: {
+    include: {
+      achievements: true,
       parts: true,
-      year: true,
     },
   });
 

@@ -5,6 +5,7 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 // $ npx prisma db push
+// $ npx prisma generate
 generator client {
   provider = "prisma-client-js"
 }
@@ -62,22 +63,44 @@ type Role {
   bolidName  String
 }
 
+
 model Bolid {
-  id                String @id @default(auto()) @map("_id") @db.ObjectId
-  name              String @unique
-  year              String
-  short_description String
+  id                  String         @id @default(auto()) @map("_id") @db.ObjectId
+  name                String         @unique
+  year                String
+  short_description   String
   EN_short_description String?
-  parts             Part[]
-  acceleration      String
-  mass              String
-  power             String
+  acceleration        String
+  mass                String
+  power               String
+  parts               Part[]         // Relacja 1-wiele
+  achievements        Achievement[]
 }
 
-type Part {
+model Part {
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
   partName    String
   description String
+  bolidId     String  @db.ObjectId
+  bolid       Bolid   @relation(fields: [bolidId], references: [id], onDelete: Cascade)
 }
+
+model Achievement {
+  id                String   @id @default(auto()) @map("_id") @db.ObjectId
+  bolidId           String   @db.ObjectId
+  bolid             Bolid    @relation(fields: [bolidId], references: [id], onDelete: Cascade)
+
+  competitionName   String   // np. "FORMULA STUDENT GERMANY"
+  backgroundImage   String?  // ścieżka do zdjęcia w tle (opcjonalnie)
+  logo              String?  // ścieżka do logotypu zawodów (opcjonalnie)
+
+  results           Result[]
+}
+
+type Result {
+  label String // np. "6th Overall", "8th Skidpad" itp.
+}
+
 
 model News {
   id                String @id @default(auto()) @map("_id") @db.ObjectId
