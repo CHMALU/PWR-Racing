@@ -118,6 +118,7 @@ const goldSponsors = [
 
 const silverSponsors = [
   { name: "logo-AMA-PROFIL-COREL-_2_.png", url: "https://www.amaprofil.pl/" },
+  { name: "nanotec.png", url: "https://www.nanotec.com/eu/en" },
   { name: "auto zatoka.jpg", url: "https://www.auto-zatoka.pl/" },
   { name: "boellhoff-logo.svg", url: "https://www.boellhoff.com/pl-pl/" },
   { name: "chem trend.png", url: "https://pl.chemtrend.com/" },
