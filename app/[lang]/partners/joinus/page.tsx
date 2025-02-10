@@ -282,7 +282,7 @@ const PartnersJoin: React.FC<Props> = async ({ params }) => {
   const mainMembers = await getMembersData([
     "paweł wójcik",
     "bartosz sobczak",
-    "zuzanna kochanowska",
+    "alicja jeżak",
     "joanna popielewska",
   ]);
 

@@ -52,6 +52,14 @@ const getMembersData = async (
   return teamMembers;
 };
 
+const formatPhoneNumber = (phoneNumber: string | null | undefined) => {
+  if (!phoneNumber) return "";
+  const countryCode = phoneNumber.slice(0, 3);
+  const restOfNumber = phoneNumber.slice(3);
+  const formattedNumber = restOfNumber.replace(/(\d{3})(?=\d)/g, "$1 ");
+  return `${countryCode} ${formattedNumber}`;
+};
+
 interface ContactUsProps {
   params: {
     lang: string;
@@ -127,7 +135,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
                   email={member.email || "pawel.wojcik.pwrrt@gmail.com"}
                 />
                 <EmailAction
-                  email={member.phoneNumber || "pawel.wojcik.pwrrt@gmail.com"}
+                  email={formatPhoneNumber(member.phoneNumber) || "Brak numeru"}
                 />
               </div>
             ))}
