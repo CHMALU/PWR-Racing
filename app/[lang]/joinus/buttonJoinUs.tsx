@@ -11,7 +11,10 @@ const ButtonsSection: React.FC<ButtonsSectionProps> = ({ dict }) => {
   const router = useRouter();
 
   const handleFormsClick = () => {
-    window.open("https://forms.gle/4mt5v32n4vKPdt568", "_blank"); // Otwiera Facebooka w nowej karcie
+    window.open(
+      "https://docs.google.com/forms/d/1EGLPpMqqDQ15weFgiAibdRCAght7lzGOT00tMSNVsBA/edit",
+      "_blank"
+    ); // Otwiera Facebooka w nowej karcie
   };
 
   const handleFacebookClick = () => {
