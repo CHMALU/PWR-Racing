@@ -53,11 +53,13 @@ const Timer: React.FC<TimerProps> = ({ targetDate, dict }) => {
     <div className="flex flex-col items-center gap-4">
       <div className="mb-8">
         <Text bold medium color="black">
-          {dict.thanksForInterest}
+          {/* {dict.recruitmentClosed} */}
+          {dict.recruitmentOpen}
         </Text>
       </div>
       <Text wide small>
-        {dict.nextRecruitmentStartsIn}
+        {/* {dict.recruitmentNextIn} */}
+        {dict.recruitmentOpenEndIn}
       </Text>
       <div className="flex gap-2 md:gap-4">
         <div className="flex flex-col text-center">

@@ -268,8 +268,10 @@
   "joinUs": {
     "pageTitle": "REKRUTACJA",
     "becomeMember": "ZOSTAŃ CZŁONKIEM",
-    "thanksForInterest": "Rekrutacja zakończona, dziękujemy za zainteresowanie! 🚀",
-    "nextRecruitmentStartsIn": "KOLEJNA REKRUTACJA RUSZY ZA:",
+    "recruitmentClosed": "Rekrutacja zakończona, dziękujemy za zainteresowanie! 🚀",
+    "recruitmentNextIn": "KOLEJNA REKRUTACJA RUSZY ZA:",
+    "recruitmentOpen": "Rekrutacja otwarta! Dołącz do nas i twórz z nami coś wyjątkowego. 🚀",
+    "recruitmentOpenEndIn": "REKRUTACJA TRWA JESZCZE PRZEZ:",
     "days": "DNI",
     "hours": "GODZIN",
     "minutes": "MINUT",

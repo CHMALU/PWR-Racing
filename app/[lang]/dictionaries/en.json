@@ -268,8 +268,10 @@
   "joinUs": {
     "pageTitle": "RECRUITMENT",
     "becomeMember": "BECOME A MEMBER",
-    "nextRecruitmentStartsIn": "THE NEXT RECRUITMENT STARTS IN:",
-    "thanksForInterest": "Recruitment has ended, thank you for your interest! 🚀",
+    "recruitmentClosed": "Recruitment closed, thank you for your interest! 🚀",
+    "recruitmentNextIn": "NEXT RECRUITMENT STARTS IN:",
+    "recruitmentOpen": "Recruitment open! Join us and create something amazing with us. 🚀",
+    "recruitmentOpenEndIn": "RECRUITMENT LASTS FOR:",
     "days": "DAYS",
     "hours": "HOURS",
     "minutes": "MINUTES",
