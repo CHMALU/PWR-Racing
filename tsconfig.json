@@ -26,8 +26,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "prisma/seedTeamMember.js",
-    "prisma/clearColection.js"
+    "app/hooks/seedTeamMember.js",
+    "prisma/clearColection.js",
+    "app/actions/seedTeamMember.ks"
   ],
   "exclude": ["node_modules"]
 }

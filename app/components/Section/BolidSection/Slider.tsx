@@ -8,12 +8,14 @@ export interface SliderProps {
   currentBolid: string;
   onChangeBolid?: (newBolid: string) => void;
   darkMode?: boolean;
+  showRt15e?: boolean;
 }
 
 const Slider: React.FC<SliderProps> = ({
   currentBolid = "RT13e",
   onChangeBolid = () => {},
   darkMode = false,
+  showRt15e = false,
 }) => {
   // Stan dla przeciągania
   const [isDragging, setIsDragging] = useState(false);
@@ -77,6 +79,15 @@ const Slider: React.FC<SliderProps> = ({
         onMouseUp={stopDragging}
       >
         <div className="flex relative gap-12 sm:gap-24 mx-8 md:ml-[calc((100vw-var(--container-width))/2)]">
+          {showRt15e && (
+            <SliderElement
+              darkMode={darkMode}
+              date={2025}
+              bolid="RT15e"
+              onClick={onChangeBolid}
+              currentBolid={currentBolid}
+            />
+          )}
           <SliderElement
             darkMode={darkMode}
             date={2024}

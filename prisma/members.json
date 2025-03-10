@@ -1,0 +1,625 @@
+[
+  {
+    "department": "marketing",
+    "name": "iga",
+    "surname": "małkus",
+    "role": "Social Media Manager",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "marketing",
+    "name": "stanisław",
+    "surname": "mazurkiewicz",
+    "role": "Photographer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "marketing",
+    "name": "karol ",
+    "surname": "cieślawski",
+    "role": "Photographer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "marketing",
+    "name": "magdalena",
+    "surname": "ćwiklińska",
+    "role": "Photographer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "marketing",
+    "name": "nina ",
+    "surname": "kumor",
+    "role": "Social Media Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "marketing",
+    "name": "yelizaveta",
+    "surname": "amelyaniuk",
+    "role": "Social Media Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "marketing",
+    "name": "wiktor",
+    "surname": "krzemień",
+    "role": "Video Editor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "marketing",
+    "name": "aleksandra",
+    "surname": "mazan",
+    "role": "Graphic Designer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "aleksandra",
+    "surname": "świder",
+    "role": "Business Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "amelia",
+    "surname": "durska",
+    "role": "Business Presentation Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "bartosz",
+    "surname": "karczmarczyk",
+    "role": "Business Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "grzegorz",
+    "surname": "rak",
+    "role": "Finance Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "hubert",
+    "surname": "kiernożycki",
+    "role": "Business Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "jan",
+    "surname": "wilgosz",
+    "role": "Cost & Manufacturing Manager",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "kacper",
+    "surname": "achenbach",
+    "role": "Finance Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "oskar",
+    "surname": "krawczyk",
+    "role": "Business Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "business",
+    "name": "zuzanna",
+    "surname": "kiełbińska",
+    "role": "Business Specialist",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "mikołaj",
+    "surname": "stojowski",
+    "role": "Composites Department Leader",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "nazarii",
+    "surname": "honcharenko",
+    "role": "Rear Wing Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "nina",
+    "surname": "janik",
+    "role": "Front Wing Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "jakub",
+    "surname": "koman",
+    "role": "Aerodynamics Project Manager",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "bartosz",
+    "surname": "kozakiewicz",
+    "role": "Underbody Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "wiktor",
+    "surname": "kuźmicki",
+    "role": "Battery Cooling",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "dominik",
+    "surname": "pachecki",
+    "role": "Ergonomy Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "jakub",
+    "surname": "ruchała",
+    "role": "TSAC Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "maciej",
+    "surname": "sikora",
+    "role": "Monocoque Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "przemysław",
+    "surname": "szczepański",
+    "role": "Side Panel Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "hanna",
+    "surname": "szebesczyk",
+    "role": "Ergonomy Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "wojciech",
+    "surname": "żuberek",
+    "role": "Monocoque Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "patrycja",
+    "surname": "sobala",
+    "role": "Monocoque Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "julian",
+    "surname": "cybulski",
+    "role": "TSAC Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "mateusz",
+    "surname": "kacprzyk",
+    "role": "Rear Wing Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "michał",
+    "surname": "łazarski",
+    "role": "Nose Cone Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "krzysztof",
+    "surname": "sidelnik",
+    "role": "Underbody Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "mateusz",
+    "surname": "szydłowski",
+    "role": "Battery Cooling",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "bartosz",
+    "surname": "derek",
+    "role": "Rear Wing Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "composites",
+    "name": "filip",
+    "surname": "florczyk",
+    "role": "Ram Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "jakub",
+    "surname": "drzewiecki",
+    "role": "Software Department Leader",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "dawid",
+    "surname": "chmal",
+    "role": "Wepsite Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "wiktor",
+    "surname": "koczkodaj",
+    "role": "Telemetry Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "łukasz",
+    "surname": "michalski",
+    "role": "Autonomous System Engineer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "maciej",
+    "surname": "sadowski",
+    "role": "Software Engineer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "wiktoria",
+    "surname": "sawicka",
+    "role": "ASB Software Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "bartłomiej",
+    "surname": "sitnik",
+    "role": "Autonomous System Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "kacper",
+    "surname": "synator",
+    "role": "Perception Fusion Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "tomasz",
+    "surname": "mioduszewski",
+    "role": "Software Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "software",
+    "name": "maksymilian",
+    "surname": "chudzik",
+    "role": "Software Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "rafał",
+    "surname": "dziki",
+    "role": "Electrical Department Leader",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "maciej",
+    "surname": "bębenek",
+    "role": "Electronics Designer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "aleksander",
+    "surname": "dziągwa",
+    "role": "Electronics Designer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "kacper",
+    "surname": "sowiński",
+    "role": "Wiring Harness Manager",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "michał",
+    "surname": "wieczorek",
+    "role": "HV Battery Project Manager",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "jakub",
+    "surname": "kołaczek",
+    "role": "Electronics Designer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "grzegorz",
+    "surname": "kowalewski",
+    "role": "HV Battery Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "mikołaj",
+    "surname": "kujawski",
+    "role": "Wiring Harness Designer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "dawid",
+    "surname": "malinowski",
+    "role": "Electronics Designer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "bartek",
+    "surname": "orlikowski",
+    "role": "Electronics Designer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "oskar",
+    "surname": "rutkowski",
+    "role": "HV Battery Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "electrical",
+    "name": "kacper",
+    "surname": "sarna",
+    "role": "Electronics Designer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "kamil",
+    "surname": "wadas",
+    "role": "Mechanical Department Leader",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "igor",
+    "surname": "wawrzyniak",
+    "role": "Wheel Assembly Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "szymon",
+    "surname": "szaniawski",
+    "role": "Brake System Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "maciej",
+    "surname": "moroń",
+    "role": "Cooling Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "filip",
+    "surname": "markuzel",
+    "role": "Dampers & Wishbone Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "bartosz",
+    "surname": "bartosiewicz",
+    "role": "Wishbones Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "jacek",
+    "surname": "derej",
+    "role": "Pedalbox Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "jakub",
+    "surname": "derc",
+    "role": "Rockers Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "krystian",
+    "surname": "pietrucha",
+    "role": "Steering Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "mateusz",
+    "surname": "nowak",
+    "role": "Motor Cooling Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "michał",
+    "surname": "kruk",
+    "role": "Tierods Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "olaf",
+    "surname": "nowakowski",
+    "role": "Brake Disc Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "otylia",
+    "surname": "turlejska",
+    "role": "Autonomus System Brake Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "mechanical",
+    "name": "szczepan",
+    "surname": "świrski",
+    "role": "Pushrods Constructor",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "vehicle performance",
+    "name": "filip",
+    "surname": "ciechański",
+    "role": "Vehicle Performance Department Leader",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "vehicle performance",
+    "name": "bartłomiej",
+    "surname": "płoszyński",
+    "role": "Vehicle Kinematics Engineer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "vehicle performance",
+    "name": "maciej",
+    "surname": "władyka",
+    "role": "Vehicle Simulation Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "vehicle performance",
+    "name": "michał",
+    "surname": "wiewiórowski",
+    "role": "Data Analysis Engineer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "vehicle performance",
+    "name": "kamil",
+    "surname": "kaznowski",
+    "role": "Powertrain Simulation Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "vehicle performance",
+    "name": "rafał",
+    "surname": "warda",
+    "role": "Vehicle Simulation Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "vehicle performance",
+    "name": "michał",
+    "surname": "szczepkowski",
+    "role": "VDCU Developer",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "workshop",
+    "name": "jakub",
+    "surname": "stankowiec",
+    "role": "Intrastructure Coordinator",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "workshop",
+    "name": "karolina",
+    "surname": "wasiukiewicz",
+    "role": "Project Specialist (?)",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "drivers",
+    "name": "rafał",
+    "surname": "dziki",
+    "role": "driver",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "drivers",
+    "name": "paweł",
+    "surname": "wójcik",
+    "role": "driver",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "drivers",
+    "name": "igor",
+    "surname": "wawrzyniak",
+    "role": "driver",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "drivers",
+    "name": "jakub",
+    "surname": "drzewiecki",
+    "role": "driver",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "opiekun naukowy",
+    "name": "dr ",
+    "surname": "hab. inż. Anna Janicka",
+    "role": "Opiekun Naukowy",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "opiekun naukowy",
+    "name": "dr ",
+    "surname": "inż. Gustaw Sierzputowski",
+    "role": "Opiekun Naukowy",
+    "bolidName": "RT15e"
+  },
+  {
+    "department": "opiekun naukowy",
+    "name": "dr ",
+    "surname": "hab. inż. Damian Derlukiewicz",
+    "role": "Opiekun Naukowy",
+    "bolidName": "RT15e"
+  }
+]

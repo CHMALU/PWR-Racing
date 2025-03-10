@@ -114,7 +114,7 @@ const TeamPage = async ({ params }: { params: Iparams }) => {
   return (
     <div className="relative bg-neutral-950 pt-32 pb-12">
       <div className="relative overflow-hidden">
-        <ClientSlider teamId={teamId} />
+        <ClientSlider showRt15e teamId={teamId} />
 
         <div className="pt-10">
           {sortedDepartments.map((department, depIndex) => (
