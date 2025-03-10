@@ -1,45 +1,45 @@
 import pandas as pd
 import json
 
-# Load the Excel file
-file_path = 'prisma/members.xlsx'  # Use raw string or forward slashes for Windows paths
-df = pd.read_excel(file_path, dtype=str)  # Read all cells as strings
+def process_excel(file_path, output_path):
+    # Wczytaj plik XLSX
+    df = pd.read_excel(file_path)
 
-# Initialize the dictionary to hold members
-members_dict = {}
+    # Opcjonalnie: sprawdź, jakie są dostępne kolumny
+    print("Kolumny w Excel:", df.columns.tolist())
 
-# Iterate over the rows in the DataFrame
-for index, row in df.iterrows():
-    name = str(row['IMIĘ']).strip().lower() if not pd.isna(row['IMIĘ']) else ''
-    surname = str(row['NAZWISKO']).strip().lower() if not pd.isna(row['NAZWISKO']) else ''
-    email = str(row['mail']).strip().lower() if not pd.isna(row['mail']) else ''
-
-    # Skip members without a name or surname
-    if not name or not surname:
-        continue
-
-    role_info = {
-        'role': str(row['ROLA W SEZONIE 2023/24']).strip().lower() if not pd.isna(row['ROLA W SEZONIE 2023/24']) else '',
-        'department': str(row['DZIAŁ']).strip().lower() if not pd.isna(row['DZIAŁ']) else '',
-        'bolidName': 'RT14e'
+    # Przyjmujemy, że kolumny mają nazwy: name, surname, department, role, bolidName.
+    # Jeżeli nazwy są inne (np. z wielkiej litery lub w języku polskim), można je przemapować:
+    mapping = {
+        'Imię': 'name',
+        'Nazwisko': 'surname',
+        'Dział': 'department',
+        'Rola': 'role',
+        # Jeśli nazwa kolumny dla bolidName jest inna, dodaj odpowiednią mapping
     }
 
-    identifier = f"{name}_{surname}"
+    # Jeśli mapping nie jest pusty, wykonujemy rename
+    if any(col in df.columns for col in mapping.keys()):
+        df = df.rename(columns=mapping)
 
-    if identifier in members_dict:
-        members_dict[identifier]['roles'].append(role_info)
-    else:
-        members_dict[identifier] = {
-            'name': name,
-            'surname': surname,
-            'email': email,
-            'roles': [role_info]
-        }
+    # Upewnij się, że usunięto ewentualne białe znaki z nazw kolumn
+    df.columns = [col.strip() for col in df.columns]
 
-# Convert the dictionary to a list of dictionaries
-members = list(members_dict.values())
+    # Konwersja wybranych kolumn na małe litery
+    for col in ['name', 'surname', 'department', 'role']:
+        if col in df.columns:
+            df[col] = df[col].astype(str).str.lower()
 
-# Save the list of dictionaries in a JSON format suitable for JavaScript/TypeScript to a text file
-output_text = "const members = " + json.dumps(members, indent=4, ensure_ascii=False) + ";"
-with open('members_output.txt', 'w', encoding='utf-8') as text_file:
-    text_file.write(output_text)
+    # Konwersja DataFrame do listy słowników
+    members = df.to_dict(orient='records')
+
+    # Zapis do pliku JSON
+    with open(output_path, 'w', encoding='utf-8') as f:
+        json.dump(members, f, ensure_ascii=False, indent=2)
+
+    print(f"Plik {output_path} został utworzony.")
+
+if __name__ == "__main__":
+    excel_file = "Arkusz roli członków.xlsx"      # zmień na nazwę Twojego pliku XLSX
+    output_json = "2members.json"
+    process_excel(excel_file, output_json)
