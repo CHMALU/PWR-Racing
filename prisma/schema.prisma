@@ -73,16 +73,13 @@ model Bolid {
   acceleration        String
   mass                String
   power               String
-  parts               Part[]         // Relacja 1-wiele
+  parts               Part[]
   achievements        Achievement[]
 }
 
-model Part {
-  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+type Part {
   partName    String
   description String
-  bolidId     String  @db.ObjectId
-  bolid       Bolid   @relation(fields: [bolidId], references: [id], onDelete: Cascade)
 }
 
 model Achievement {
@@ -100,7 +97,6 @@ model Achievement {
 type Result {
   label String // np. "6th Overall", "8th Skidpad" itp.
 }
-
 
 model News {
   id                String @id @default(auto()) @map("_id") @db.ObjectId

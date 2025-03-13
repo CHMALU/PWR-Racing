@@ -8,7 +8,6 @@ export async function getBolidByBolidId(bolidId: string) {
     },
     include: {
       achievements: true,
-      parts: true,
     },
   });
 
