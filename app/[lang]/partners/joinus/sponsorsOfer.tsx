@@ -6,6 +6,7 @@ import Image from "next/image";
 import Text from "@/app/components/Text";
 import Title from "@/app/components/Title";
 import Button from "@/app/components/Button";
+import { usePathname, useRouter } from "next/navigation";
 
 interface Props {
   dict: {
@@ -105,6 +106,14 @@ const SponsorsOfer: React.FC<Props> = ({ dict }) => {
     }
   };
 
+  const router = useRouter();
+  const path = usePathname();
+
+  const teamRedirect = () => {
+    const currentLocale = path!.split("/")[1];
+    router.push(`/${currentLocale}/contact`);
+  };
+
   return (
     <Container>
       <div className="z-10 w-full bg-white grid grid-cols-1 md:grid-cols-2 p-6 md:p-12 gap-8 rounded-sm shadow-xl">
@@ -133,7 +142,7 @@ const SponsorsOfer: React.FC<Props> = ({ dict }) => {
                 </div>
               ))}
             </div>
-            <Button label={dict.buttonLabel} onClick={() => {}} />
+            <Button label={dict.buttonLabel} onClick={() => teamRedirect()} />
           </div>
         </div>
       </div>
