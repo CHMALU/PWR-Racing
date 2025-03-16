@@ -135,7 +135,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ dict }) => {
               variants={imageVariants}
             >
               <Image
-                src="/images/bolid_main.png"
+                src="/images/2bolid_main.png"
                 alt="bolid"
                 layout="intrinsic"
                 width={700}
