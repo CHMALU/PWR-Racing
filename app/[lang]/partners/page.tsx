@@ -64,6 +64,7 @@ const platinumSponsors = [
     url: "https://www.staubli.com/pl/pl/home.html",
   },
   { name: "top1karting_logo_rgb.svg", url: "https://top1karting.pl/" },
+  { name: "logo-kimla.png", url: "https://kimla.pl/" },
   {
     name: "wolften.jpg",
     url: "https://wolften.pl/pl/?gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds1OzvDOFGnD4jQcjVa_iI1GWNkXZgQqFz5XU0IFdlc3ORePnVQGjRMaAmUEEALw_wcB",
