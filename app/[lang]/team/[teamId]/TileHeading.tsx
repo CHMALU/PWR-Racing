@@ -71,6 +71,11 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
+  // Sprawdzamy długość imienia i nazwiska
+  const fullName = `${member.name} ${member.surname}`;
+  const dynamicTranslate =
+    fullName.length > 25 ? "translate-y-[76%]" : "translate-y-[82%]";
+
   return (
     <div
       className=""
@@ -81,7 +86,7 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
         className={`${
           opiekun
             ? "bottom-0"
-            : "capitalize absolute inset-0 translate-y-[82%] group-hover:opacity-[98%] group-hover:translate-y-0 group-hover:p-6 transition duration-300 ease-in-out"
+            : `capitalize absolute inset-0 ${dynamicTranslate} group-hover:opacity-[98%] group-hover:translate-y-0 group-hover:p-6 transition duration-300 ease-in-out`
         } absolute p-3 flex flex-col justify-between bg-black`}
       >
         <div className="absolute inset-0 z-0 w-full h-full rounded-full blur-3xl bg-white opacity-15"></div>
@@ -137,7 +142,6 @@ const TileHeading: React.FC<ParamsTileHeading> = ({
         </div>
 
         <div className=" flex flex-col w-full gap-4">
-          {/* <ClientSideInteractionButton /> */}
           {phoneNumber && (
             <Button
               label={dictionary.zadzwon}

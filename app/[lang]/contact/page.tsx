@@ -128,7 +128,7 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
                 <UserCard
                   dictionary={dictionaryCard}
                   member={member}
-                  teamId="RT14e"
+                  teamId="RT15e"
                   roleHistory={roleHistory}
                 />
                 <EmailAction
@@ -159,7 +159,6 @@ const ContactUs: React.FC<ContactUsProps> = async ({ params }) => {
                 <UserCard
                   dictionary={dictionaryCard}
                   key={index}
-                  opiekun={true}
                   member={member}
                   teamId="RT14e"
                   roleHistory={roleHistory}

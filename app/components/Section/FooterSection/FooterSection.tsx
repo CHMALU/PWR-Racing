@@ -74,9 +74,11 @@ const FooterSection: React.FC<FooterSectionProps> = ({ dict }) => {
       </div>
       <Container>
         <div className="flex flex-col w-full">
-          <div className="w-full md:px-12 flex flex-wrap flex-col md:flex-row justify-center xl:justify-between items-center gap-x-12">
-            <Logo width={200} height={180} />
-            <div className="flex flex-col flex-wrap md:flex-row justify-center lg:justify-between items-center gap-4 md:gap-12">
+          <div className="w-full md:px-12 flex flex-wrap flex-col md:flex-row justify-center xl:gap-12 items-center gap-x-12">
+            <div className="lg:w-80">
+              <Logo width={200} height={180} />
+            </div>
+            <div className="flex flex-wrap md:flex-row justify-end items-center gap-4 md:gap-12">
               <div
                 className="flex flex-col items-center md:items-start cursor-pointer group"
                 onClick={handlePhoneClick}

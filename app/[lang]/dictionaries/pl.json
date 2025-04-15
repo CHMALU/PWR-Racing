@@ -23,7 +23,7 @@
     "members": "CZŁONKÓW",
     "membersDescription": "Których łączy jedna pasja",
     "projects": "PROJEKTÓW",
-    "projectsDescription": "Ukończonych bolidów",
+    "projectsDescription": "Bolidów wyścigowych",
     "achievements": "OSIĄGNIĘĆ",
     "achievementsDescription": "W międzynarodowych zawodach",
     "description": "PWR Racing Team jest najstarszym oraz najbardziej utytułowanym Zespołem Formuły Student w Polsce. Od powstania w 2009 roku zaprojektowaliśmy, a następnie skonstruowaliśmy 15 pojazdów - w tym 12 bolidów spalinowych oraz trzy elektryczne z systemami jazdy autonomicznej. Aktualnie pracujemy nad czwartą tego typu konstrukcją. Z sezonu na sezon staramy się udoskonalać tworzone przez nas projekty oraz wykorzystywać coraz bardziej innowacyjne rozwiązania inżynierskie. Na przestrzeni 15 lat funkcjonowania dwukrotnie uplasowaliśmy się na pierwszym miejscu w klasyfikacji generalnej zawodów, tym samym wygrywając całą edycję. Po raz pierwszy miało to miejsce w 2017 roku podczas SAE Italy, a ponownie dokonaliśmy tego w trakcie pierwszej polskiej odsłony rywalizacji w sezonie 2022/2023. Obecnie od dwóch lat PWR Racing Team utrzymuje tytuł najlepszego polskiego Zespołu Formuły Student. ",
@@ -155,10 +155,11 @@
       ]
     },
     "marketing": {
-      "description": "Dział zajumący się wizerunkiem Zespołu i promocją jego działań w mediach społecznościowych. Ponadto odpowiada za logistykę i organizację wydarzeń.",
+      "description": "Dział zajmujący się wizerunkiem Zespołu i promocją jego działań w mediach społecznościowych. Ponadto odpowiada za logistykę i organizację wydarzeń.",
       "responsibilities": [
         { "text": "tworzeniem materiałów promocyjnych", "icon": "plik.svg" },
-        { "text": "organizacją wydarzeń", "icon": "box.svg" }
+        { "text": "organizacją wydarzeń", "icon": "klucz.svg" },
+        { "text": "prowadzeniem social mediów", "icon": "box.svg" }
       ]
     },
     "software": {
@@ -300,7 +301,7 @@
     "napisz": "Napisz do mnie!"
   },
   "partnerJoinUsPage": {
-    "pageTitle": "ZOSATAŃ PARTNEREM",
+    "pageTitle": "ZOSTAŃ PARTNEREM",
     "sectionTitle2": "Współpraca z nami to:",
     "benefits": [
       {
