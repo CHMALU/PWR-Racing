@@ -258,7 +258,7 @@ const FooterSection: React.FC<FooterSectionProps> = ({ dict }) => {
               {dict.createdBy}
             </Text>
             <Text color="white" center>
-              {dict.allRightsReserved}
+              © {new Date().getFullYear()} {dict.allRightsReserved}
             </Text>
           </div>
         </div>

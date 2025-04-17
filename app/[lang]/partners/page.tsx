@@ -123,7 +123,6 @@ const silverSponsors = [
   { name: "auto zatoka.jpg", url: "https://www.auto-zatoka.pl/" },
   { name: "boellhoff-logo.svg", url: "https://www.boellhoff.com/pl-pl/" },
   { name: "chem trend.png", url: "https://pl.chemtrend.com/" },
-  { name: "czupryna car.png", url: "http://czupryna.eu/" },
   { name: "cnc jurczak.png", url: "https://cncjurczak.pl/" },
   { name: "LOGO-nowe 2019.png", url: "https://www.perrot.de/pl/" },
   {

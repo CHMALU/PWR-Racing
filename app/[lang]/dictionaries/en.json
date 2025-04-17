@@ -41,7 +41,7 @@
   },
   "navigation": {
     "home": "Home",
-    "bolid": "Bolid",
+    "bolid": "Cars",
     "team": "Team",
     "about": "About Us",
     "partners": "Partners",
@@ -54,7 +54,7 @@
     "findUs": "Where to find us?",
     "navigation": "Navigation",
     "home": "Home",
-    "bolid": "Bolid",
+    "bolid": "Cars",
     "team": "Team",
     "about": "About Us",
     "partners": "Partners",
@@ -70,7 +70,7 @@
     "rodo": "RODO",
     "recruitment": "Recruitment",
     "createdBy": "Project & Execution: Maria Kanczewska & Dawid Chmal",
-    "allRightsReserved": "© 2024 All rights reserved",
+    "allRightsReserved": " All rights reserved",
     "seasonDescription": "In each season, we create a new racing car. We have as many as twelve unique models of combustion cars, each of which can easily outperform the previous one. Last season, the first electric car with autonomous driving systems in the history of the Team – RT12e – was created. We are currently working on our fourteenth construction."
   },
   "sidebar": {
@@ -78,13 +78,13 @@
     "recruitment": "Recruitment"
   },
   "bolidSection": {
-    "moreAboutBolid": "More about the bolid",
+    "moreAboutBolid": "More about the vehicle",
     "meetTeam": "Meet the team",
     "acceleration": "Acceleration",
     "mass": "Mass",
     "power": "Power",
     "specyfikacja": "Specification",
-    "bolidu": "of the Bolid",
+    "bolidu": "of the Vehicle",
     "TXTacceleration": "ACCELERATION 0-100 KM/H",
     "TXTpower": "ENGINE POWER",
     "TXTmass": "VEHICLE MASS",
