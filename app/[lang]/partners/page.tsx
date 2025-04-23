@@ -50,8 +50,8 @@ const platinumSponsors = [
   { name: "mibm.png", url: "https://mibm.pl/" },
   { name: "premium solutions.png", url: "https://premiumsolutions.pl/" },
   {
-    name: "pts waś_logo2023.jpg",
-    url: "https://www.was.eu/?gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds0lhK-KCC0bZtcfvXqOMsCyknlfES8eysmWfn2BKaNBDikBmDPLXRQaAm_QEALw_wcB",
+    name: "akademia_mlodego_mechanika_vb.jpg",
+    url: "https://akademiamlodegomechanika.pl",
   },
   { name: "radiotechnika marketing.png", url: "http://radiotechnika.com.pl/" },
   { name: "siemens.png", url: "https://www.siemens.com/pl/pl.html" },
