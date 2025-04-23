@@ -14,7 +14,7 @@
   "teamSection": {
     "title": "ZESPÓŁ",
     "subtitle": "RAZEM MOŻEMY WSZYSTKO",
-    "description": "Młodzi, ambitni, zaangażowani i odważni – tak najlepiej można opisać studentów Politechniki Wrocławskiej, a zwłaszcza członków PWR Racing Team. Nasza organizacja działa według struktury jak w dużych firmach. Na czele zespołu stoi lider, który ponosi największą odpowiedzialność. Bezpośrednio podlega mu lider techniczny, zarządzający liderami poszczególnych działów, z wyjątkiem marketingu i business – te działy raportuje bezpośrednio do lidera zespołu. Każdy członek zespołu podlega swojemu liderowi działu.",
+    "description": "Młodzi, ambitni, zaangażowani i odważni – tak najlepiej można opisać studentów Politechniki Wrocławskiej, a zwłaszcza członków PWR Racing Team. Nasza organizacja działa według struktury jak w dużych firmach. Na czele zespołu stoi lider, który ponosi największą odpowiedzialność. Bezpośrednio podlega mu lider techniczny, zarządzający liderami poszczególnych działów, z wyjątkiem marketingu i business – te działy raportują bezpośrednio do lidera zespołu. Każdy członek zespołu podlega swojemu liderowi działu.",
     "buttonLabel": "Poznaj nasz zespół"
   },
   "historySection": {
@@ -71,7 +71,7 @@
     "recruitment": "Rekrutacja",
     "createdBy": "Projekt & Wykonanie: Maria Kanczewska & Dawid Chmal",
     "allRightsReserved": " Wszelkie prawa zastrzeżone",
-    "seasonDescription": "W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim koncie mamy aż dwanaście niepowtarzalnych modeli bolidów spalinowych, z czego każdy kolejny jest w stanie z łatwością pokonać poprzedni. W roku 2022 powstał pierwszy w historii Zespołu bolid elektryczny z systemami jazdy autonomicznej – RT12e. Aktualnie zajmujemy się budową naszej piętnastej konstrukcji."
+    "seasonDescription": "W każdym sezonie tworzymy nowy bolid wyścigowy. Na swoim koncie mamy aż dwanaście niepowtarzalnych modeli bolidów spalinowych, z czego każdy kolejny jest w stanie z łatwością pokonać poprzedni. W roku 2022 powstał pierwszy w historii Zespołu bolid elektryczny z systemami jazdy autonomicznej – RT12e. Aktualnie zajmujemy się budową naszej szesnastej konstrukcji, która nosi nazwę RT15e."
   },
   "sidebar": {
     "media": "Media",
@@ -128,7 +128,7 @@
           "icon": "klucz.svg"
         },
         {
-          "text": "projektowaniem części mocowania i struktury metalowej w monocoque",
+          "text": "projektowaniem mocowań części",
           "icon": "box.svg"
         }
       ]
@@ -246,11 +246,11 @@
       },
       "cost": {
         "title": "Cost and Manufacturing",
-        "text": "Konkurencja oceniają skrupulatność, z jaką przygotowano kosztorys projektu oraz wiedzę Członków Zespołu na temat kosztów materiałów oraz wytworzenia bolidu."
+        "text": "Konkurencja oceniająca skrupulatność, z jaką przygotowano kosztorys projektu oraz wiedzę Członków Zespołu na temat kosztów materiałów oraz wytworzenia bolidu."
       },
       "engineering": {
         "title": "Engineering Design",
-        "text": "Konkurencja polegająca na prezentacji projektu bolidu. Sędziowie oceniają umiejętności inżynierskie oraz pomysłowość Członków Zespołów przy projektowaniu zarówno całokształtu, jak i poszczególnych systemów pojazdu. Jest to najwyżej punktowana konkurencja statyczna, którą oceniają eksperci z branży motoryzacyjnej."
+        "text": "Konkurencja polegająca na prezentacji projektu bolidu. Sędziowie oceniają umiejętności inżynierskie oraz pomysłowość Członków Zespołu przy projektowaniu zarówno całokształtu, jak i poszczególnych systemów pojazdu. Jest to najwyżej punktowana konkurencja statyczna, którą oceniają eksperci z branży motoryzacyjnej."
       },
       "business": {
         "title": "Business Plan Presentation",
