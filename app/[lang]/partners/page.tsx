@@ -16,6 +16,8 @@ const strategicSponsors = [
 ];
 
 const platinumSponsors = [
+  { name: "akademia_mlodego_mechanika_vb.jpg",
+    url: "https://akademiamlodegomechanika.pl"},
   { name: "3d expert.jpg", url: "https://3d-expert.pl/" },
   { name: "3designlab.png", url: "https://3designlab.pl/" },
   { name: "3m.png", url: "https://www.3mpolska.pl/3M/pl_PL/firma-pl/" },
@@ -23,6 +25,7 @@ const platinumSponsors = [
   { name: "atlas ward.png", url: "https://atlasward.pl/" },
   { name: "astromal.png", url: "https://astromal.pl/" },
   { name: "betis.png", url: "https://ekspertyzy-szkolenia.pl/" },
+  { name: "brose_sitech.png", url: "https://www.brose-sitech.com/pl" },
   { name: "content.jpg", url: "https://www.lapp.com/pl/pl/PLN/" },
   { name: "ellagro.png", url: "http://www.ellagro.com/" },
   { name: "endego.jpg", url: "https://endego.com/pl/" },
@@ -31,6 +34,7 @@ const platinumSponsors = [
     name: "fanuc.jpg",
     url: "https://www.fanuc.eu/pl/pl?gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds0vZ-AdUK6tbuY9tFhBFlKjg323nGPseM-z6mF96YXZ8RJVH6Hp9TEaAnANEALw_wcB",
   },
+  { name: "frezamet.png", url: "https://frezamet-bis.com"},
   { name: "hexlogo_black_png.png", url: "https://www.hexcel.com/" },
   { name: "investa.png", url: "https://www.investa.pl/" },
   { name: "kisssoft.jpg", url: "https://www.kisssoft.com/en" },
@@ -48,11 +52,9 @@ const platinumSponsors = [
   },
   { name: "mahle.png", url: "https://www.pl.mahle.com/pl/" },
   { name: "mibm.png", url: "https://mibm.pl/" },
+  { name: "nils.png", url: "https://nils-polska.pl" },
   { name: "premium solutions.png", url: "https://premiumsolutions.pl/" },
-  {
-    name: "akademia_mlodego_mechanika_vb.jpg",
-    url: "https://akademiamlodegomechanika.pl",
-  },
+  { name: "qrc.png", url: "https://qrc.com.pl" },
   { name: "radiotechnika marketing.png", url: "http://radiotechnika.com.pl/" },
   { name: "siemens.png", url: "https://www.siemens.com/pl/pl.html" },
   {
@@ -76,6 +78,10 @@ const platinumSponsors = [
 ];
 
 const goldSponsors = [
+  {
+    name: "aboutenergy.svg",
+    url: "https://www.aboutenergy.io",
+  },
   {
     name: "adbl.png",
     url: "https://adbl.eu/",
@@ -103,14 +109,17 @@ const goldSponsors = [
   { name: "inkarbo.jpg", url: "https://www.inkarbo.com/" },
   { name: "inter-metal.png", url: "https://www.inter-metal.com.pl/" },
   { name: "kaufland.png", url: "https://www.kaufland.pl/" },
+  { name: "kghm_zanam.jpg", url: "https://www.kghmzanam.com" },
   { name: "lange .png", url: "https://langelukaszuk.pl/" },
   { name: "quay.png", url: "https://www.quay.pl/" },
   { name: "mitutoyo.png", url: "https://mitutoyo.pl/pl_pl" },
   { name: "ntn-snr.png", url: "https://www.ntn-snr.com/pl" },
   { name: "polak modele i prototypy.png", url: "https://modeleiprototypy.pl/" },
+  { name: "ppk.png", url: "https://precision-engineering.pl" },
   { name: "protoplastic.png", url: "https://protoplastic.pl/" },
   { name: "rs.png", url: "https://pl.rs-online.com/web/" },
   { name: "schaeffler.png", url: "https://www.schaeffler.pl/pl/" },
+  { name: "speedfloor.png", url: "https://speedfloor.pl" },
   { name: "tenneco logo finalrgb.png", url: "https://www.tenneco.com/" },
   { name: "vector.png", url: "https://www.vector.com/int/en/" },
   { name: "Wolfratech_Logo.png", url: "http://www.wolfratech.pl/" },
@@ -130,6 +139,7 @@ const silverSponsors = [
     url: "https://www.facebook.com/p/DeWrap-100063967515424/",
   },
   { name: "hellermanntyton.jpg", url: "https://www.hellermanntyton.pl/" },
+  { name: "jbc.png", url: "https://www.jbctools.com" },
   { name: "jusky.png", url: "https://jusky.pl/" },
   {
     name: "logo_branson.png",
@@ -145,11 +155,13 @@ const silverSponsors = [
   },
   { name: "stelweld.png", url: "https://www.stelweld.com.pl/" },
   { name: "tadex_logo_black.svg", url: "https://tadex.com.pl/" },
+  { name: "verder.jpg", url: "https://www.verder.com" },
   { name: "wo bit.png", url: "https://wobit.com.pl/" },
   { name: "wimarol.jpg", url: "https://waterjet.pl/" },
 ];
 
 const bronzeSponsors = [
+  { name: "armes.png", url: "https://armes.com.pl" },
   { name: "3dconnexion.png", url: "https://3dconnexion.com/pl/" },
   {
     name: "adi-logo-cmyk-solid.jpg",
@@ -169,8 +181,10 @@ const bronzeSponsors = [
   { name: "elesa+ganter.jpg", url: "https://www.elesa-ganter.pl/pl/pol" },
   { name: "hamaton.png", url: "https://www.hamaton-tpms.com/" },
   { name: "logo_konmet-eu.jpg", url: "https://www.konmet.eu/pl/" },
+  { name: "galchem.jpg", url: "http://galchem.com.pl/strona-glowna/" },
   { name: "gthr.png", url: "https://gthr.pl/" },
   { name: "infineon.png", url: "https://www.infineon.com/" },
+  { name: "isabellenhuette.png", url: "https://www.isabellenhuette.de/en/" },
   {
     name: "lincoln electric.png",
     url: "https://www.lincolnelectric.com/pl-pl",
@@ -179,20 +193,25 @@ const bronzeSponsors = [
     name: "logo_igus.png",
     url: "https://www.igus.pl/?gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds1DukXj1aZ6EKEc6W2IDWFlbU5CQH6nICAaE7w-_jqRtA3idxXtMA8aArlnEALw_wcB",
   },
+  { name: "kw-suspensions.svg", url: "https://www.kw-suspensions.pl" },
   { name: "milar.png", url: "https://www.milar.pl/" },
   { name: "miwa.png", url: "https://www.miwa.net.pl/" },
   { name: "nc-tech.png", url: "https://nc-tech.pl/" },
   { name: "N-POL cutting tools.png", url: "https://www.npol.com.pl/" },
+  { name: "norelem.png", url: "https://www.norelem.pl/pl/" },
   { name: "metalpol.png", url: "https://mtlpl.eu/pl/" },
   { name: "oberon.png", url: "http://www.oberon.pl/" },
+  { name: "opony express.png", url: "https://oponyexpress.pl/?cl=pl" },
   { name: "pagero.png", url: "https://pagero.pl/" },
   { name: "power rubber.webp", url: "https://powerrubber.com/" },
   {
     name: "petrobaza.png",
     url: "http://petrobaza.pl/",
   },
-  { name: "opony express.png", url: "https://oponyexpress.pl/?cl=pl" },
+  { name: "promac.webp", url: "https://www.promac.com.pl" },
   { name: "logo renex pl RED.svg", url: "https://www.renex.pl/" },
+  { name: "Logo_Rosa3D.png", url: "https://www.rosa3d.pl" },
+  { name: "r-service.png", url: "https://www.r-service.pl" },
   {
     name: "solvec.png",
     url: "https://solvec.pl/?fbclid=IwZXh0bgNhZW0CMTAAAR3lOtYRIQOeoEDz7qFMdb1XQZkmatNzJu7E41Lt7DZ19swJ6jPVXrbFE9o_aem_NrGa2wwTGFsIHmhsEPjrxw",
@@ -211,7 +230,13 @@ const bronzeSponsors = [
     name: "AutoSock.png",
     url: "https://autosock.com.pl/",
   },
+
+  {
+    name: "Wurth_Elektronik.png",
+    url: "https://www.we-online.com/en",
+  },
 ];
+
 
 interface SponsorGridProps {
   sponsorRank: string;
