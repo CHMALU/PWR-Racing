@@ -157,7 +157,7 @@ const silverSponsors = [
   },
   { name: "stelweld.png", url: "https://www.stelweld.com.pl/" },
   { name: "tadex_logo_black.svg", url: "https://tadex.com.pl/" },
-  { name: "verder_blue.svg", url: "https://www.verder.com" },
+  { name: "verder_2.jpg", url: "https://www.verder.com" },
   { name: "wo bit.png", url: "https://wobit.com.pl/" },
   { name: "wimarol.jpg", url: "https://waterjet.pl/" },
 ];
