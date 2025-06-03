@@ -16,8 +16,10 @@ const strategicSponsors = [
 ];
 
 const platinumSponsors = [
-  { name: "akademia_mlodego_mechanika_vb.jpg",
-    url: "https://akademiamlodegomechanika.pl"},
+  {
+    name: "akademia_mlodego_mechanika_vb.jpg",
+    url: "https://akademiamlodegomechanika.pl",
+  },
   { name: "3d expert.jpg", url: "https://3d-expert.pl/" },
   { name: "3designlab.png", url: "https://3designlab.pl/" },
   { name: "3m.png", url: "https://www.3mpolska.pl/3M/pl_PL/firma-pl/" },
@@ -34,7 +36,7 @@ const platinumSponsors = [
     name: "fanuc.jpg",
     url: "https://www.fanuc.eu/pl/pl?gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds0vZ-AdUK6tbuY9tFhBFlKjg323nGPseM-z6mF96YXZ8RJVH6Hp9TEaAnANEALw_wcB",
   },
-  { name: "frezamet.png", url: "https://frezamet-bis.com"},
+  { name: "frezamet.png", url: "https://frezamet-bis.com" },
   { name: "hexlogo_black_png.png", url: "https://www.hexcel.com/" },
   { name: "investa.png", url: "https://www.investa.pl/" },
   { name: "kisssoft.jpg", url: "https://www.kisssoft.com/en" },
@@ -236,7 +238,6 @@ const bronzeSponsors = [
     url: "https://www.we-online.com/en",
   },
 ];
-
 
 interface SponsorGridProps {
   sponsorRank: string;
