@@ -157,7 +157,7 @@ const silverSponsors = [
   },
   { name: "stelweld.png", url: "https://www.stelweld.com.pl/" },
   { name: "tadex_logo_black.svg", url: "https://tadex.com.pl/" },
-  { name: "verder.jpg", url: "https://www.verder.com" },
+  { name: "verder_blue.svg", url: "https://www.verder.com" },
   { name: "wo bit.png", url: "https://wobit.com.pl/" },
   { name: "wimarol.jpg", url: "https://waterjet.pl/" },
 ];
@@ -195,7 +195,7 @@ const bronzeSponsors = [
     name: "logo_igus.png",
     url: "https://www.igus.pl/?gad_source=1&gclid=Cj0KCQjwj9-zBhDyARIsAERjds1DukXj1aZ6EKEc6W2IDWFlbU5CQH6nICAaE7w-_jqRtA3idxXtMA8aArlnEALw_wcB",
   },
-  { name: "kw-suspensions.svg", url: "https://www.kw-suspensions.pl" },
+  { name: "KW_automotive_suspensions.png", url: "https://www.kw-suspensions.pl" },
   { name: "milar.png", url: "https://www.milar.pl/" },
   { name: "miwa.png", url: "https://www.miwa.net.pl/" },
   { name: "nc-tech.png", url: "https://nc-tech.pl/" },
@@ -234,7 +234,7 @@ const bronzeSponsors = [
   },
 
   {
-    name: "Wurth_Elektronik.png",
+    name: "wurthelektroniks.png",
     url: "https://www.we-online.com/en",
   },
 ];
